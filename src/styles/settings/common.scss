@@ -1,0 +1,130 @@
+@use 'the-new-css-reset/css/reset.css';
+@use 'utils';
+@use 'typo';
+@use 'fonts';
+@use '../components/button';
+@use '../components/header';
+@use '../components/menu';
+@use '../components/footer';
+@use '../components/breadcrumbs';
+
+
+* {
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Gotham', sans-serif;
+  background: #F5F7F9;
+  color: #000;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: #F5F7F9;
+  transition: opacity 0.3s;
+
+  &.loading-ended {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.line {
+  overflow: hidden;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.container {
+  padding: 0 1.5rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding: 0 6rem;
+  }
+}
+
+.line-wrap {
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.pt {
+  padding-top: 16rem;
+}
+
+.pb {
+  padding-bottom: 16rem;
+}
+
+@media (min-width: 768px) {
+  .pt {
+    padding-top: 25rem;
+  }
+
+  .pb {
+    padding-bottom: 25rem;
+  }
+}
+
+
+

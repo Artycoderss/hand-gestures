@@ -1,0 +1,15 @@
+@function toIndex($value) {
+  $resValue: calc((var(--vw, 1vw) + var(--vh, 1vh)) * (#{$value} / var(--toIndex, 30)));
+
+  @return $resValue;
+}
+
+:root {
+  $mobile: calc(10 / 3.75 * 1vw);
+  $desktop: calc(10 / 19.2 * 1vw);
+  font-size: $mobile;
+
+  @media (min-width: 768px) {
+    font-size: $desktop;
+  }
+}

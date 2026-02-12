@@ -1,0 +1,76 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+    "eslint-config-prettier"
+  ],
+  "plugins": [
+    "import",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "func-names": "off",
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "import/unambiguous": "off",
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [
+          "swiper/css",
+          "swiper/css/pagination",
+          "swiper/css/autoplay",
+          "swiper/css/effect-fade",
+          "swiper/css/scrollbar",
+          "swiper/css/navigation",
+          "swiper/css/bundle",
+          "@fancyapps/ui/dist/fancybox/fancybox.css"
+        ]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js"
+        ],
+        "moduleDirectory": [
+          "node_modules",
+          "src"
+        ]
+      },
+      "alias": {
+        "map": [
+          [
+            "@",
+            "./src"
+          ]
+        ],
+        "extensions": [
+          ".js"
+        ]
+      }
+    }
+  }
+}

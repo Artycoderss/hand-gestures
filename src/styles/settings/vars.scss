@@ -1,0 +1,62 @@
+$transition: 300ms ease-in-out;
+
+$breakpoint-md: 744px;
+$breakpoint-lg-tablet: 1024px;
+$breakpoint-lg: 1279px;
+$breakpoint-xl: 1440px;
+
+$breakpoints: (
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+);
+
+$color-primary-light: #e5e3ff;
+$color-primary-default: #aaa4fb;
+$color-primary-dark: #7861ea;
+
+$color-secondary-light: #a4a2b2;
+$color-secondary-default: #403e5b;
+$color-secondary-dark: #2f2d42;
+
+$color-mint-light: #a5feef;
+$color-mint-default: #28e8c8;
+$color-mint-dark: #31c9b0;
+
+$color-pro-light: #fafea5;
+$color-pro-default: #f6fe56;
+$color-pro-dark: #959947;
+
+$color-warning-light: #fee9a5;
+$color-warning-default: #ffd858;
+$color-warning-dark: #a88b2b;
+
+$color-error-light: #ffd2d5;
+$color-error-default: #fe5660;
+$color-error-dark: #b4313a;
+
+$gradient-purple-light: linear-gradient(45deg, #aaa4fb 0%, #e9e8ff 100%);
+$gradient-purple-dark: linear-gradient(45deg, #7671c2 0%, #aaa4fb 100%);
+$gradient-green: linear-gradient(45deg, #22d6b8 0%, #a5feef 100%);
+$gradient-grey: linear-gradient(50.98deg, #bcbbc7 1.15%, #f0f0f5 96.99%);
+$gradient-blue: linear-gradient(50.98deg, #9c96ed 1.15%, #9ad4f6 96.99%);
+$gradient-mysctic-violet: linear-gradient(180deg, #aaa4fb 0%, #e5d2e5 100%);
+
+$color-text-primary: #21202e;
+$color-text-secondary: #898896;
+$color-text-ondark: #fff;
+$color-text-disabled: #d6d4d9;
+
+$color-bg: #fff;
+$color-bg-secondary: #fafafa;
+
+$color-neutral-light: #f5f5f7;
+$color-neutral-medium: #d7d7d9;
+$color-neutral-dark: #3e3d50;
+$color-neutral-white: #fff;
+$color-neutral-black: #1d1c28;
+
+$color-divider: #eee;
+$color-divider-dark: #d7d7d9;
+
+$color-background-paper: #fff;
